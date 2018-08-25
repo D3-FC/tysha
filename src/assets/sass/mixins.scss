@@ -1,0 +1,28 @@
+@import "resets/reset-mixins";
+
+@mixin tysha-shadow{
+  box-shadow: 0 3px 6px $tysha-shadow__color;
+}
+
+@mixin tysha-transitionIn($properties, $duration: '0.15s') {
+  $transition: "";
+
+  @each $prop in $properties {
+    @if $transition == "" {
+      $transition: $transition + $prop + " " + $duration + " ease-out";
+    }
+    @else {
+      $transition: $transition + ", " + $prop + " " + $duration+" ease-out";
+    }
+  }
+
+  transition: #{$transition};
+  will-change: $properties;
+}
+
+@mixin tysha-transition($properties...) {
+  @include tysha-transitionIn($properties, '0.15s')
+}
+
+
+

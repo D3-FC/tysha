@@ -1,0 +1,12 @@
+%reset-a{
+  //normalize from normalize.css
+  background-color: transparent;
+
+  @include reset-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin reset-a(){
+  @extend %reset-a;
+}

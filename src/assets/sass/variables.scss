@@ -1,0 +1,15 @@
+$tysha-color--base: #343A3A;
+$tysha-color--primary: #F7FF00;
+$tysha-color--secondary: #BEC7C9;
+$tysha-color--error: #FF6F00;
+$tysha-color--success: #00FF55;
+$tysha-color--info: #25F1B2;
+
+$tysha-font: 'Roboto', sans-serif;
+
+$tysha-border__color: rgba($tysha-color--secondary, 0.4);
+
+$tysha-shadow__color: rgba(#000000, 0.15);
+
+$tysha-sidebar__text__color: $tysha-border__color;
+$tysha-sidebar__item--hover__background__color: #1D2020;

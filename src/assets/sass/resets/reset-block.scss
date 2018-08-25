@@ -1,0 +1,13 @@
+%reset-block{
+  @include reset-element;
+  display: block;
+  box-sizing: border-box;
+}
+
+@mixin reset-block {
+  @extend %reset-block;
+}
+
+@mixin reset-nav {
+  @include reset-block;
+}

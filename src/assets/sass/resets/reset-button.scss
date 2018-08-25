@@ -1,0 +1,42 @@
+%reset-button {
+  //normalization from normalize.css
+
+  @at-root button#{&}{
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    &::-moz-focus-inner{
+      border-style: none;
+      padding: 0;
+    }
+    &:-moz-focusring{
+      outline: 1px dotted ButtonText;
+    }
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  //reset
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+  background: none;
+  white-space: nowrap;
+  touch-action: manipulation;
+  user-select: none;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin reset-button {
+  @include reset-a;
+  @extend %reset-button
+}
