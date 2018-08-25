@@ -26,10 +26,10 @@ export default {
     @include reset-button;
     border-radius: 1px;
     width: calc(100% + #{$tysha-list-item__right-margin});
-    right: -$tysha-list-item__right-margin;
     font-family: $tysha-font;
     font-size: 20px;
     font-weight: 300;
+    white-space: pre-wrap;
 
     &--status_active{
       background-color: $tysha-sidebar__item--hover__background__color;

@@ -3,17 +3,19 @@
     <div class="tysha-sidebar__container">
       <div class="tysha-sidebar__logo">TYSHA</div>
       <div class="tysha-sidebar__user"></div>
-      <div class="tysha-sidebar__list-container">
+      <tysha-scroll class="tysha-sidebar__list-container">
         <slot/>
-      </div>
+      </tysha-scroll>
     </div>
   </nav>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-
-@Component
+import TyshaScroll from '../Scroll/TyshaScroll'
+@Component({
+  components: {TyshaScroll}
+})
 export default class TyshaSidebar extends Vue {
 
 }
@@ -26,6 +28,7 @@ export default class TyshaSidebar extends Vue {
     top: 0;
     bottom: 0;
     width: 200px;
+    max-width: 200px;
     display: flex;
     color: $tysha-sidebar__text__color;
     &__container{
@@ -54,6 +57,7 @@ export default class TyshaSidebar extends Vue {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-shrink: 0;
     }
     &__user{
       @include reset-block;
@@ -61,6 +65,7 @@ export default class TyshaSidebar extends Vue {
       background-size: cover;
       height: 153px;
       @include tysha-shadow;
+      flex-shrink: 0;
     }
   }
 </style>

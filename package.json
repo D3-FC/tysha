@@ -39,6 +39,7 @@
     "typescript": "^3.0.0",
     "typescript-eslint-parser": "^18.0.0",
     "vue-book": "^0.0.14",
+    "vue-perfect-scrollbar": "^0.1.0",
     "vue-template-compiler": "^2.5.17"
   },
   "browserslist": [
