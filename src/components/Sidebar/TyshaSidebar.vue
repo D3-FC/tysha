@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import TyshaScroll from '../Scroll/TyshaScroll'
+import TyshaScroll from '../Scroll/TyshaScroll.vue'
 @Component({
   components: {TyshaScroll}
 })

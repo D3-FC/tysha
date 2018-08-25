@@ -12,7 +12,7 @@
 
 <script>
 import TyshaList from './TyshaList.vue'
-import TyshaListItem from './TyshaListItem'
+import TyshaListItem from './TyshaListItem.vue'
 
 export default {
   components: {

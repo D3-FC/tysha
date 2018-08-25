@@ -25,4 +25,28 @@
 }
 
 
-
+@mixin tysha-theme($type){
+  &--#{$type}{
+    &_base{
+      color: $tysha-color--base;
+    }
+    &_primary{
+      color: $tysha-color--primary;
+    }
+    &_secondary{
+      color: $tysha-color--secondary;
+    }
+    &_error{
+      color: $tysha-color--error;
+    }
+    &_success{
+      color: $tysha-color--success;
+    }
+    &_info{
+      color: $tysha-color--info;
+    }
+  }
+}
+@mixin tysha-theme--color(){
+  @include tysha-theme('color')
+}

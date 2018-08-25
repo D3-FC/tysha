@@ -26,8 +26,8 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import TyshaSidebar from './components/Sidebar/TyshaSidebar.vue'
-import TyshaList from './components/List/TyshaList'
-import TyshaListItem from './components/List/TyshaListItem'
+import TyshaList from './components/List/TyshaList.vue'
+import TyshaListItem from './components/List/TyshaListItem.vue'
 
 @Component({
   components: {TyshaListItem, TyshaList, TyshaSidebar}

@@ -33,6 +33,7 @@ export default {
 
     &--status_active{
       background-color: $tysha-sidebar__item--hover__background__color;
+      @include tysha-shadow;
     }
   }
 </style>

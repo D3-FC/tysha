@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'development') {
       router.addRoutes([
         VueComponentTree.createRoute({
           //@ts-ignore
-          requireContext: require.context('./components', true, /.demo.vue$/),
+          requireContext: require.context('./components', true, /Demo(.*).vue$/),
           path: '/demo',
           hideFileExtensions: false, // optional, hides file extensions in list.
         })
