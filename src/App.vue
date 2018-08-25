@@ -6,17 +6,17 @@
         <tysha-list-item>Menu item 2 with very very long name</tysha-list-item>
         <tysha-list-item>Menu item 3</tysha-list-item>
         <tysha-list-item>Menu item 4</tysha-list-item>
-        <tysha-list-item>Menu item 5</tysha-list-item>
-        <tysha-list-item>Menu item 6</tysha-list-item>
-        <tysha-list-item>Menu item 7</tysha-list-item>
-        <tysha-list-item>Menu item 8</tysha-list-item>
-        <tysha-list-item>Menu item 9</tysha-list-item>
-        <tysha-list-item>Menu item 10</tysha-list-item>
-        <tysha-list-item>Menu item 11</tysha-list-item>
-        <tysha-list-item>Menu item 12</tysha-list-item>
-        <tysha-list-item>Menu item 13</tysha-list-item>
-        <tysha-list-item>Menu item 14</tysha-list-item>
-        <tysha-list-item>Menu item 15</tysha-list-item>
+        <!--<tysha-list-item>Menu item 5</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 6</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 7</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 8</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 9</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 10</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 11</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 12</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 13</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 14</tysha-list-item>-->
+        <!--<tysha-list-item>Menu item 15</tysha-list-item>-->
       </tysha-list>
     </tysha-sidebar>
     <router-view/>

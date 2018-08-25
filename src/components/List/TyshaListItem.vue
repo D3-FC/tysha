@@ -19,9 +19,6 @@ export default {
 
     background-color: transparent;
     padding: 13px (20px + $tysha-list-item__right-margin) 13px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     @include tysha-transition(background-color);
     @include reset-button;
     border-radius: 1px;
@@ -29,7 +26,9 @@ export default {
     font-family: $tysha-font;
     font-size: 20px;
     font-weight: 300;
-    white-space: pre-wrap;
+    white-space: normal;
+    justify-content: flex-start;
+    text-align: left;
 
     &--status_active{
       background-color: $tysha-sidebar__item--hover__background__color;

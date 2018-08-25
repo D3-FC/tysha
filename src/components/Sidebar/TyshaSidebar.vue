@@ -30,12 +30,14 @@ export default class TyshaSidebar extends Vue {
     width: 200px;
     max-width: 200px;
     display: flex;
+    flex-direction: row;
     color: $tysha-sidebar__text__color;
     &__container{
       @include reset-block;
       flex: 1 1 auto;
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
     &__list-container{
       @include reset-block;
