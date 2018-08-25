@@ -38,12 +38,13 @@
     "ts-jest": "^23.0.0",
     "typescript": "^3.0.0",
     "typescript-eslint-parser": "^18.0.0",
+    "vue-book": "^0.0.14",
     "vue-template-compiler": "^2.5.17"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 11"
   ],
   "gitHooks": {
     "pre-commit": "lint-staged"
