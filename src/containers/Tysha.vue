@@ -1,28 +1,16 @@
 <template>
-  <div class="tysha-app">
-    <tysha-sidebar>
-      <tysha-list>
-        <tysha-list-item activated>Menu item 1</tysha-list-item>
-        <tysha-list-item>Menu item 2</tysha-list-item>
-        <tysha-list-item>Menu item 3</tysha-list-item>
-        <tysha-list-item>Menu item 4</tysha-list-item>
-        <tysha-list-item>Menu item 5</tysha-list-item>
-      </tysha-list>
-    </tysha-sidebar>
-    <router-view/>
+  <div class="tysha">
+    <slot/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import TyshaSidebar from './components/Sidebar/TyshaSidebar.vue'
-import TyshaList from './components/List/TyshaList'
-import TyshaListItem from './components/List/TyshaListItem'
 
 @Component({
-  components: {TyshaListItem, TyshaList, TyshaSidebar}
-})
-export default class App extends Vue {
+  })
+export default class Tysha extends Vue {
+
 }
 </script>
 
