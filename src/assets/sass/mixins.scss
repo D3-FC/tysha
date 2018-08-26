@@ -45,8 +45,27 @@
     &_info{
       color: $tysha-color--info;
     }
+    &_muted{
+      color: $tysha-color--muted;
+    }
   }
 }
 @mixin tysha-theme--color(){
   @include tysha-theme('color')
+}
+@mixin tysha-theme--font__size(){
+  &--size{
+    &_lg{
+      font-size: 20px;
+    }
+    &_md{
+      font-size: 14px;
+    }
+    &_sm{
+      font-size: 12px;
+    }
+    &_xs{
+      font-size: 10px;
+    }
+  }
 }

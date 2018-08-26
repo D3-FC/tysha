@@ -4,5 +4,6 @@ export enum ThemeColor{
   secondary = 'secondary',
   error = 'error',
   success = 'success',
-  info = 'info'
+  info = 'info',
+  muted = 'muted'
 }

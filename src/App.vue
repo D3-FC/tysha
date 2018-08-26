@@ -1,6 +1,8 @@
 <template>
   <div class="tysha-app">
     <tysha-sidebar>
+      <domain-logo slot="logo"/>
+      <domain-current-user slot="user"/>
       <tysha-list>
         <tysha-list-item activated>Menu item 1</tysha-list-item>
         <tysha-list-item>Menu item 2 with very very long name</tysha-list-item>
@@ -28,9 +30,11 @@ import { Component, Vue } from 'vue-property-decorator'
 import TyshaSidebar from './components/Sidebar/TyshaSidebar.vue'
 import TyshaList from './components/List/TyshaList.vue'
 import TyshaListItem from './components/List/TyshaListItem.vue'
+import DomainLogo from './components/Domain/Logo/DomainLogo.vue'
+import DomainCurrentUser from './components/Domain/CurrentUser/DomainCurrentUser.vue'
 
 @Component({
-  components: {TyshaListItem, TyshaList, TyshaSidebar}
+  components: {DomainCurrentUser, DomainLogo, TyshaListItem, TyshaList, TyshaSidebar}
   })
 export default class App extends Vue {
 }

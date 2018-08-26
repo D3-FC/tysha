@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" class="tysha-text" :class="colorClassList">
+  <component :is="tag" class="tysha-text" :class="[sizeClassList, colorClassList]">
     <slot />
   </component>
 </template>
@@ -8,17 +8,17 @@
 import { Component, Prop } from 'vue-property-decorator'
 import { WithColor } from '../../mixins/WithColor'
 import { mixins } from 'vue-class-component'
+import { WithSize } from '../../mixins/WithSize'
 
 @Component
-export default class TyshaText extends mixins(WithColor) {
+export default class TyshaText extends mixins(WithColor, WithSize) {
   @Prop({default: 'span', type: String}) tag!: string
 }
 </script>
 
 <style lang="scss">
   .tysha-text {
-    font-size: 14px;
-
     @include tysha-theme--color;
+    @include tysha-theme--font__size;
   }
 </style>
