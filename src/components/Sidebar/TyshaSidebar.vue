@@ -46,8 +46,6 @@ export default class TyshaSidebar extends Vue {
     &__list-container{
       @include reset-block;
       border-right: 1px solid rgba($tysha-color--secondary, 0.4);
-      margin-top: 22px;
-      margin-bottom: 22px;
       flex: 1;
     }
     &__logo{
