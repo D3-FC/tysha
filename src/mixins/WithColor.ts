@@ -11,13 +11,13 @@ export class WithColor extends Vue {
     }
   }) color!: string
 
-  get kebabCaseComponentName(){
+  get kebabCaseComponentName () {
     return new MegaString(this.$options.name || '').toKebabCase()
   }
 
   get colorClassList (): Object {
     const result: KeyToValueMapContract = {}
-    Object.values(ThemeColor).forEach((color: string)=>{
+    Object.values(ThemeColor).forEach((color: string) => {
       result[`${this.kebabCaseComponentName}--color_${color}`] = this.color === color
     })
     return result

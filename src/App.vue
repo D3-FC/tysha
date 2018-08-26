@@ -31,7 +31,7 @@ import TyshaListItem from './components/List/TyshaListItem.vue'
 
 @Component({
   components: {TyshaListItem, TyshaList, TyshaSidebar}
-})
+  })
 export default class App extends Vue {
 }
 </script>

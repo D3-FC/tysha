@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//@ts-ignore
+// @ts-ignore
 import demoRoutes from './demoRoutes.js'
 import Home from './views/Home.vue'
 
@@ -19,21 +19,19 @@ const router = new Router({
   routes
 })
 
-
 if (process.env.NODE_ENV === 'development') {
-  //@ts-ignore
+  // @ts-ignore
   import('vue-book')
     .then((VueComponentTree) => {
       router.addRoutes([
         VueComponentTree.createRoute({
-          //@ts-ignore
+          // @ts-ignore
           requireContext: require.context('./components', true, /Demo(.*).vue$/),
           path: '/demo',
-          hideFileExtensions: false, // optional, hides file extensions in list.
+          hideFileExtensions: false // optional, hides file extensions in list.
         })
       ])
-    });
+    })
 }
 
 export default router
-

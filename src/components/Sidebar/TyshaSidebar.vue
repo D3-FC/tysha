@@ -15,7 +15,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import TyshaScroll from '../Scroll/TyshaScroll.vue'
 @Component({
   components: {TyshaScroll}
-})
+  })
 export default class TyshaSidebar extends Vue {
 
 }
@@ -52,7 +52,6 @@ export default class TyshaSidebar extends Vue {
       background-color: #262A2A;
       @include tysha-shadow;
       z-index: 1;
-
       font-size: 24px;
       font-weight: 800;
       color: $tysha-color--secondary;
