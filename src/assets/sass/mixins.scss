@@ -25,34 +25,35 @@
 }
 
 
-@mixin tysha-theme($type){
-  &--#{$type}{
+@mixin tysha-theme--color($type){
+  &--color{
     &_base{
-      color: $tysha-color--base;
+      #{$type}: $tysha-color--base;
     }
     &_primary{
-      color: $tysha-color--primary;
+      #{$type}: $tysha-color--primary;
     }
     &_secondary{
-      color: $tysha-color--secondary;
+      #{$type}: $tysha-color--secondary;
     }
     &_error{
-      color: $tysha-color--error;
+      #{$type}: $tysha-color--error;
     }
     &_success{
-      color: $tysha-color--success;
+      #{$type}: $tysha-color--success;
     }
     &_info{
-      color: $tysha-color--info;
+      #{$type}: $tysha-color--info;
     }
     &_muted{
-      color: $tysha-color--muted;
+      #{$type}: $tysha-color--muted;
     }
   }
 }
-@mixin tysha-theme--color(){
-  @include tysha-theme('color')
+@mixin tysha-theme--color__color(){
+  @include tysha-theme--color('color')
 }
+
 @mixin tysha-theme--font__size(){
   &--size{
     &_lg{
@@ -69,3 +70,4 @@
     }
   }
 }
+
