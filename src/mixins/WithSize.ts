@@ -16,7 +16,7 @@ export class WithSize extends Vue {
     return new MegaString(this.$options.name || '').toKebabCase()
   }
 
-  get sizeClassList (): Object {
+  get sizeClassList (): object {
     const result: KeyToValueMapContract = {}
     Object.values(ThemeSize).forEach((color: string) => {
       result[`${this.kebabCaseComponentName}--size_${color}`] = this.size === color
