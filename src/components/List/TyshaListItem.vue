@@ -28,12 +28,12 @@ export default class TyshaListItem extends mixins(WithSize) {
 <style lang="scss">
   .tysha-list-item {
     $tysha-list-item__right-margin: 32px;
+    $shift: 8px;
 
     background-color: transparent;
-    padding: 13px (20px + $tysha-list-item__right-margin) 13px 20px;
     @include tysha-transition(background-color);
     @include reset-button;
-    width: calc(100% + #{$tysha-list-item__right-margin});
+    width: calc(100% + #{$shift});
     font-family: $tysha-font;
     font-size: 20px;
     font-weight: 300;
@@ -42,30 +42,17 @@ export default class TyshaListItem extends mixins(WithSize) {
     text-align: left;
 
     &--size {
-      $shift: 8px;
       &_lg {
-        width: calc(100% + #{$shift});
-        &.tysha-list-item--status_active{
-          width: $tysha-list__width--lg + $shift;
-        }
+        padding: 13px 20px;
       }
       &_md {
-        width: calc(100% + #{$shift});
-        &.tysha-list-item--status_active{
-          width: $tysha-list__width--md + $shift;
-        }
+        padding: 10px 17px;
       }
       &_sm {
-        width: calc(100% + #{$shift});
-        &.tysha-list-item--status_active{
-          width: $tysha-list__width--sm + $shift;
-        }
+        padding: 6px 10px;
       }
       &_xs {
-        width: calc(100% + #{$shift});
-        &.tysha-list-item--status_active{
-          width: $tysha-list__width--xs + $shift;
-        }
+        padding: 3px 5px;
       }
     }
     @include tysha-theme--font__size;

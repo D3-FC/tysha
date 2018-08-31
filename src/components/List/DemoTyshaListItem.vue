@@ -9,7 +9,7 @@
 
         <div>
           {{ size }}
-          <tysha-list-item :size="size">
+          <tysha-list-item :size="size" activated>
             Menu item
           </tysha-list-item>
         </div>
@@ -22,6 +22,16 @@
           <div>activated</div>
           <tysha-list-item activated>
             List item active
+          </tysha-list-item>
+        </div>
+      </div>
+    </div>
+    <div class="demo-container">
+      <div class="demo-container__item">
+        <div>
+          <div>genera</div>
+          <tysha-list-item>
+            List item
           </tysha-list-item>
         </div>
       </div>

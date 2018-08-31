@@ -25,12 +25,14 @@ export default class TyshaList extends mixins(WithColor, WithSize) {
     background-color: transparent;
     @include tysha-theme--color('background-color');
     border-radius: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
     &--color{
       &_primary, &_secondary, &_error, &_success,&_info, &_muted{
         color: $tysha-color--base;
       }
     }
-
     &--size {
       &_lg {
         width: $tysha-list__width--lg;
