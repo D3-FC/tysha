@@ -1,11 +1,11 @@
 <template>
-    <vue-perfect-scrollbar
-            class="tysha-scroll-area"
-            :settings="settings"
-            @ps-y-reach-end="scrollEnd"
-    >
-        <slot/>
-    </vue-perfect-scrollbar>
+  <vue-perfect-scrollbar
+    :settings="settings"
+    class="tysha-scroll-area"
+    @ps-y-reach-end="scrollEnd"
+  >
+    <slot/>
+  </vue-perfect-scrollbar>
 </template>
 
 <script>
@@ -13,6 +13,10 @@ import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 
 export default {
   name: 'TyshaScroll',
+  components: {
+    VuePerfectScrollbar
+  },
+  props: {},
   data () {
     return {
       settings: {
@@ -22,10 +26,6 @@ export default {
       }
     }
   },
-  components: {
-    VuePerfectScrollbar
-  },
-  props: {},
   methods: {
     scrollEnd () {
       this.$emit('scrollEnd')
