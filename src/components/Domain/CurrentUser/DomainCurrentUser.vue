@@ -1,16 +1,16 @@
 <template>
   <tysha-board class="domain-current-user">
     <tysha-text
-            tag="div"
-            size="lg"
-            color="secondary"
+      tag="div"
+      size="lg"
+      color="secondary"
     >
       Natalia Zavarotnuk
     </tysha-text>
     <tysha-text
-            tag="div"
-            size="xs"
-            color="muted"
+      tag="div"
+      size="xs"
+      color="muted"
     >
       Administrator
     </tysha-text>
