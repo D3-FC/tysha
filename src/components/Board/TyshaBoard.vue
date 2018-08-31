@@ -1,7 +1,7 @@
 <template>
   <component
-          :is="tag"
-          class="tysha-board"
+    :is="tag"
+    class="tysha-board"
   >
     <div class="tysha-board__container">
       <div class="tysha-board__content">
