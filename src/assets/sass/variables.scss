@@ -15,4 +15,9 @@ $tysha-shadow__color: rgba(#000000, 0.15);
 $tysha-sidebar__text__color: $tysha-border__color;
 $tysha-sidebar__item--hover__background__color: #1D2020;
 
-$tysha-board__background__color: rgba($tysha-color--base, .82)
+$tysha-board__background__color: rgba($tysha-color--base, .82);
+
+$tysha-list__width--lg: 200px;
+$tysha-list__width--md: 150px;
+$tysha-list__width--sm: 130px;
+$tysha-list__width--xs: 100px;

@@ -1,5 +1,8 @@
 <template>
-  <component :is="tag" class="tysha-text" :class="[sizeClassList, colorClassList]">
+  <component
+    :is="tag"
+    :class="[sizeClassList, colorClassList]"
+    class="tysha-text">
     <slot />
   </component>
 </template>
@@ -18,7 +21,7 @@ export default class TyshaText extends mixins(WithColor, WithSize) {
 
 <style lang="scss">
   .tysha-text {
-    @include tysha-theme--color;
+    @include tysha-theme--color__color;
     @include tysha-theme--font__size;
   }
 </style>
