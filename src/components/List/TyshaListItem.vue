@@ -14,11 +14,6 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 import { mixins } from 'vue-class-component'
 import { WithSize } from '../../mixins/WithSize'
 
-enum ListItemTheme {
-  general = 'general',
-  small = 'small'
-}
-
 @Component
 export default class TyshaListItem extends mixins(WithSize) {
   @Prop(Boolean) activated!: boolean
@@ -55,7 +50,7 @@ export default class TyshaListItem extends mixins(WithSize) {
         padding: 3px 5px;
       }
     }
-    @include tysha-theme--font__size;
+    @include tysha-theme--size__font;
     &--status_active{
       background-color: $tysha-sidebar__item--hover__background__color!important;
       color: $tysha-color--secondary;

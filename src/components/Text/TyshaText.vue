@@ -22,6 +22,6 @@ export default class TyshaText extends mixins(WithColor, WithSize) {
 <style lang="scss">
   .tysha-text {
     @include tysha-theme--color__color;
-    @include tysha-theme--font__size;
+    @include tysha-theme--size__font;
   }
 </style>
