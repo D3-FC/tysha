@@ -1,43 +1,29 @@
 <template>
   <div class="demo-container">
     <div
-      class="demo-container__item"
-      style="margin-left: 200px">
+            class="demo-container__item"
+            style="margin-left: 200px"
+    >
       <tysha-dropdown>
         <button slot="button">
           +
         </button>
         <tysha-list
-          color="muted"
-          size="sm">
+                layer="overlay"
+                color="primary"
+                size="sm"
+        >
           <tysha-list-item
-            size="sm"
-            activated>Menu item 1</tysha-list-item>
-          <tysha-list-item size="sm" >Menu item 1</tysha-list-item>
-          <tysha-list-item size="sm" >Menu item 1</tysha-list-item>
-          <tysha-list-item size="sm" >Menu item 1</tysha-list-item>
+                  size="sm"
+                  activated
+          >Menu item 1</tysha-list-item>
+          <tysha-list-item size="sm">Menu item 1</tysha-list-item>
+          <tysha-list-item size="sm">Menu item 1</tysha-list-item>
+          <tysha-list-item size="sm">Menu item 1</tysha-list-item>
         </tysha-list>
       </tysha-dropdown>
     </div>
-    <div
-      class="demo-container__item"
-      style="margin-left: 200px">
-      <tysha-dropdown>
-        <button slot="button">
-          +
-        </button>
-        <tysha-list
-          color="muted"
-          size="sm">
-          <tysha-list-item
-            size="sm"
-            activated>Menu item 1</tysha-list-item>
-          <tysha-list-item size="sm" >Menu item 1</tysha-list-item>
-          <tysha-list-item size="sm" >Menu item 1</tysha-list-item>
-          <tysha-list-item size="sm" >Menu item 1</tysha-list-item>
-        </tysha-list>
-      </tysha-dropdown>
-    </div>
+
   </div>
 </template>
 
