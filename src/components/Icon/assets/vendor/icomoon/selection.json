@@ -1,0 +1,77 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M279.278 139.639c0 77.12-62.518 139.639-139.639 139.639s-139.639-62.518-139.639-139.639c0-77.12 62.518-139.639 139.639-139.639s139.639 62.518 139.639 139.639z",
+          "M279.278 512.028c0 77.12-62.518 139.639-139.639 139.639s-139.639-62.518-139.639-139.639c0-77.12 62.518-139.639 139.639-139.639s139.639 62.518 139.639 139.639z",
+          "M279.278 884.361c0 77.12-62.518 139.639-139.639 139.639s-139.639-62.518-139.639-139.639c0-77.12 62.518-139.639 139.639-139.639s139.639 62.518 139.639 139.639z"
+        ],
+        "attrs": [],
+        "width": 279,
+        "grid": 0,
+        "tags": [
+          "ellipsis-v"
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "colorPermutations": {}
+      },
+      "attrs": [],
+      "properties": {
+        "order": 15,
+        "id": 1,
+        "name": "ellipsis-v",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "tysha-icons"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showCodes": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "tysha-icon--",
+      "metadata": {
+        "fontFamily": "tysha-icons",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "noie8": true,
+      "ie7": false,
+      "cssVars": true,
+      "cssVarsFormat": "scss",
+      "showSelector": true,
+      "selector": "class",
+      "classSelector": ".tysha-icon",
+      "showMetrics": true,
+      "showMetadata": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215
+    },
+    "historySize": 50,
+    "gridSize": 16
+  }
+}
