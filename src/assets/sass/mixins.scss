@@ -1,6 +1,6 @@
 @import "resets/reset-mixins";
 
-@mixin tysha-shadow{
+@mixin tysha-shadow {
   box-shadow: 0 3px 6px $tysha-shadow__color;
 }
 
@@ -10,8 +10,7 @@
   @each $prop in $properties {
     @if $transition == "" {
       $transition: $transition + $prop + " " + $duration + " ease-out";
-    }
-    @else {
+    } @else {
       $transition: $transition + ", " + $prop + " " + $duration+" ease-out";
     }
   }
@@ -24,50 +23,84 @@
   @include tysha-transitionIn($properties, '0.15s')
 }
 
-
-@mixin tysha-theme--color($type){
-  &--color{
-    &_base{
+@mixin tysha-theme--color($type) {
+  &--color {
+    &_base {
       #{$type}: $tysha-color--base;
     }
-    &_primary{
+    &_primary {
       #{$type}: $tysha-color--primary;
     }
-    &_secondary{
+    &_secondary {
       #{$type}: $tysha-color--secondary;
     }
-    &_error{
+    &_error {
       #{$type}: $tysha-color--error;
     }
-    &_success{
+    &_success {
       #{$type}: $tysha-color--success;
     }
-    &_info{
+    &_info {
       #{$type}: $tysha-color--info;
     }
-    &_muted{
+    &_muted {
       #{$type}: $tysha-color--muted;
     }
   }
 }
-@mixin tysha-theme--color__color(){
+
+@mixin tysha-theme--color__color() {
   @include tysha-theme--color('color')
 }
 
-@mixin tysha-theme--font__size(){
-  &--size{
-    &_lg{
+@mixin tysha-theme--size__font() {
+  &--size {
+    &_lg {
       font-size: 20px;
     }
-    &_md{
+    &_md {
       font-size: 14px;
     }
-    &_sm{
+    &_sm {
       font-size: 12px;
     }
-    &_xs{
+    &_xs {
       font-size: 10px;
     }
   }
 }
 
+@mixin tysha-theme--layer() {
+  $component: &;
+  &--layer {
+    &_overlay {
+      &#{$component}--color {
+        &_base {
+          background-color: rgba($tysha-color--base, 0.9);
+        }
+        &_primary {
+          background-color: rgba($tysha-color--primary, 0.9);
+        }
+        &_secondary {
+          background-color: rgba($tysha-color--secondary, 0.9);
+        }
+        &_error {
+          background-color: rgba($tysha-color--error, 0.9);
+        }
+        &_success {
+          background-color: rgba($tysha-color--success, 0.9);
+        }
+        &_info {
+          background-color: rgba($tysha-color--info, 0.9);
+        }
+        &_muted {
+          background-color: rgba($tysha-color--muted, 0.9);
+        }
+      }
+    }
+  }
+}
+
+@mixin test(){
+  color: red!important;
+}

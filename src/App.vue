@@ -3,11 +3,11 @@
     <tysha-sidebar>
       <domain-logo slot="logo"/>
       <domain-current-user slot="user"/>
-      <tysha-list>
-        <tysha-list-item activated>Menu item 1</tysha-list-item>
-        <tysha-list-item>Menu item 2 with very very long name</tysha-list-item>
-        <tysha-list-item>Menu item 3</tysha-list-item>
-        <tysha-list-item>Menu item 4</tysha-list-item>
+      <tysha-list size="lg">
+        <tysha-list-item  size="lg" activated>Menu item 1</tysha-list-item>
+        <tysha-list-item  size="lg">Menu item 2 with very very long name</tysha-list-item>
+        <tysha-list-item  size="lg">Menu item 3</tysha-list-item>
+        <tysha-list-item  size="lg">Menu item 4</tysha-list-item>
         <!--<tysha-list-item>Menu item 5</tysha-list-item>-->
         <!--<tysha-list-item>Menu item 6</tysha-list-item>-->
         <!--<tysha-list-item>Menu item 7</tysha-list-item>-->
