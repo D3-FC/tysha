@@ -18,8 +18,8 @@ export class WithSize extends Vue {
 
   get sizeClassList (): object {
     const result: KeyToValueMapContract = {}
-    Object.values(ThemeSize).forEach((color: string) => {
-      result[`${this.kebabCaseComponentName}--size_${color}`] = this.size === color
+    Object.values(ThemeSize).forEach((size: string) => {
+      result[`${this.kebabCaseComponentName}--size_${size}`] = this.size === size
     })
     return result
   }
