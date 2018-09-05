@@ -1,5 +1,5 @@
 <template>
-  <tysha-board class="domain-current-user">
+  <tysha-board class="domain-current-user" src="https://images.pexels.com/photos/614503/pexels-photo-614503.jpeg?auto=compress&cs=tinysrgb&h=200">
     <tysha-text
       tag="div"
       size="lg"
@@ -32,8 +32,6 @@ export default class DomainCurrentUser extends Vue {
 
 <style lang="scss">
   .domain-current-user {
-    background: url("https://images.pexels.com/photos/614503/pexels-photo-614503.jpeg?auto=compress&cs=tinysrgb&h=200") center no-repeat;
-    background-size: cover;
     height: 153px;
   }
 </style>
