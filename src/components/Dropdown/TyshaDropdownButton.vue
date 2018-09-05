@@ -1,6 +1,6 @@
 <template>
-  <tysha-button color="base" size="xs" class="tysha-dorpdown-button">
-    <tysha-icon icon="ellipsis-v" class="tysha-dorpdown-button__icon"/>
+  <tysha-button color="base" size="xs" class="tysha-dropdown-button">
+    <tysha-icon icon="ellipsis-v" class="tysha-dropdown-button__icon"/>
   </tysha-button>
 </template>
 
@@ -12,13 +12,13 @@ import TyshaButton from '../Button/TyshaButton'
 @Component({
   components: {TyshaButton, TyshaIcon}
   })
-export default class TyshaDorpdownButton extends Vue {
+export default class TyshaDropdownButton extends Vue {
 
 }
 </script>
 
 <style lang="scss">
-  .tysha-dorpdown-button {
+  .tysha-dropdown-button {
     &__icon{
       margin-left: -3px;
       font-size: 18px;
