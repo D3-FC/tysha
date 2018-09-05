@@ -5,12 +5,14 @@ $tysha-color--error: #FF6F00;
 $tysha-color--success: #00FF55;
 $tysha-color--info: #25F1B2;
 $tysha-color--muted: darken($tysha-color--secondary, 20%);
+$tysha-color--white: #fff;
 
 $tysha-font: 'Roboto', sans-serif;
 
 $tysha-border__color: rgba($tysha-color--secondary, 0.4);
 
 $tysha-shadow__color: rgba(#000000, 0.15);
+$tysha-shadow__color--active: rgba(#000000, 0.1);
 
 $tysha-sidebar__text__color: $tysha-border__color;
 $tysha-sidebar__item--hover__background__color: #1D2020;

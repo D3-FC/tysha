@@ -3,6 +3,9 @@
 @mixin tysha-shadow {
   box-shadow: 0 3px 6px $tysha-shadow__color;
 }
+@mixin tysha-shadow--active {
+  box-shadow: 0 3px 2px $tysha-shadow__color--active;
+}
 
 @mixin tysha-transitionIn($properties, $duration: '0.15s') {
   $transition: "";
