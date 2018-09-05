@@ -1,7 +1,8 @@
 <template>
   <component
-    :is="tag"
-    class="tysha-board"
+          :is="tag"
+          class="tysha-board"
+          :style="style"
   >
     <div class="tysha-board__container">
       <div class="tysha-board__content">
@@ -17,6 +18,15 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 @Component
 export default class TyshaBoard extends Vue {
   @Prop({type: String, default: 'div'}) tag!: string
+  @Prop(String) src!: string
+
+  get style () {
+    const style: any = {}
+    if (this.src) {
+      style.backgroundImage = `url('${this.src}')`
+    }
+    return style
+  }
 }
 </script>
 
@@ -25,6 +35,9 @@ export default class TyshaBoard extends Vue {
     @include reset-block;
     @include tysha-shadow;
     display: flex;
+
+    background: center no-repeat;
+    background-size: cover;
     &__container {
       display: flex;
       flex-direction: column;
