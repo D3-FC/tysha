@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import TyshaDorpdownButton from './TyshaDorpdownButton.vue'
+import TyshaDorpdownButton from './TyshaDropdownButton.vue'
 
 export default {
   components: {

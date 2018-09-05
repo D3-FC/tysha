@@ -5,9 +5,7 @@
             style="margin-left: 200px"
     >
       <tysha-dropdown>
-        <button slot="button">
-          +
-        </button>
+        <tysha-dropdown-button slot="button"/>
         <tysha-list
                 layer="overlay"
                 color="primary"
@@ -29,11 +27,13 @@
 
 <script>
 import TyshaDropdown from './TyshaDropdown.vue'
-import TyshaList from '../List/TyshaList'
-import TyshaListItem from '../List/TyshaListItem'
+import TyshaList from '../List/TyshaList.vue'
+import TyshaListItem from '../List/TyshaListItem.vue'
+import TyshaDropdownButton from './TyshaDropdownButton'
 
 export default {
   components: {
+    TyshaDropdownButton,
     TyshaListItem,
     TyshaList,
     TyshaDropdown

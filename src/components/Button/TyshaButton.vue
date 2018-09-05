@@ -29,6 +29,7 @@ export default class TyshaButton extends mixins(WithSize, WithColor) {
     width: calc(100% + #{$shift});
     @include tysha-shadow;
     @include tysha-transition(background-color, color, box-shadow);
+    border-radius: 1px;
 
     &--size {
       &_lg {
@@ -41,7 +42,7 @@ export default class TyshaButton extends mixins(WithSize, WithColor) {
         padding: 6px 10px;
       }
       &_xs {
-        padding: 3px 5px;
+        padding: 5px 7px;
       }
     }
     @include tysha-theme--size__font;
