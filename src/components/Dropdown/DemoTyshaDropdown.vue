@@ -2,13 +2,13 @@
   <div class="demo-container">
     <div
             class="demo-container__item"
-            style="margin-left: 200px"
+            style="margin-left: 200px; background-color: white; width: 500px; height: 500px"
     >
       <tysha-dropdown>
         <tysha-dropdown-button slot="button"/>
         <tysha-list
                 layer="overlay"
-                color="primary"
+                color="base"
                 size="sm"
         >
           <tysha-list-item
